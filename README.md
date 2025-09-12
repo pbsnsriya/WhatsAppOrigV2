@@ -16,3 +16,7 @@ for whatsapp, websocket and student management
 ### 1.1.4
 
 - index perfect
+
+### 1.1.5
+
+- register student perfect with mail sent
