@@ -24,3 +24,7 @@ for whatsapp, websocket and student management
 ### 1.1.6
 
 - public folders added, new ui for wa send
+
+### 1.1.7
+
+- task2 added

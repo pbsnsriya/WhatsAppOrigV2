@@ -43,6 +43,10 @@ const StartFunc = async (row, $element, field) => {
             jVarLocalToSendText = `https://keshavsoft.com/Interns/task1_new.pdf`;
         };
 
+        if (selectedText === "Task2") {
+            jVarLocalToSendText = `https://keshavsoft.com/Interns/task2.pdf`;
+        };
+
         if (selectedText === "Task3") {
             jVarLocalToSendText = `https://keshavsoft.com/Interns/task3.pdf`;
         };
@@ -68,6 +72,10 @@ const jFLocalChangeSelectValue = ({ inValue, inHtmlElement }) => {
             break;
         case "Task1":
             inHtmlElement.value = 'deadline : today EOD, all the best 👍';
+
+            break;
+        case "Task2":
+            inHtmlElement.value = 'deadline : tomorrow EOD, all the best 👍';
 
             break;
         case "Task3":
