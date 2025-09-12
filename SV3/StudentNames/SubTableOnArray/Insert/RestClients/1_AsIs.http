@@ -1,0 +1,16 @@
+POST http://localhost:9113/SV3/StudentNames/SubTableOnArray/Insert/AsIs/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+  "StudentName": "",
+  "Mobile": "",
+  "email": "",
+  "CollegeName": "",
+  "Country": "",
+  "EntranceRank": "",
+  "YearPassOut": "",
+  "Back_logs": "",
+  "RollNumber": "",
+  "file": "",
+  "GitLink": ""
+}

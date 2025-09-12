@@ -1,0 +1,16 @@
+POST http://localhost:9113/V3/StudentNames/SubTableOnArray/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{
+  "StudentName": "",
+  "Mobile": "",
+  "email": "",
+  "CollegeName": "",
+  "Country": "",
+  "EntranceRank": "",
+  "YearPassOut": "",
+  "Back_logs": "",
+  "RollNumber": "",
+  "file": "",
+  "GitLink": ""
+}

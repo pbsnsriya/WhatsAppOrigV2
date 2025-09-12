@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div class="flex h-screen w-screen antialiased text-gray-800">
+        <div class="flex flex-row h-full w-full overflow-x-hidden">
+            <div class="flex flex-col py-2 pl-6 pr-2 w-64 bg-white flex-shrink-0">
+                <div
+                    class="flex flex-col items-center bg-indigo-100 border border-gray-200 mt-4 w-full py-6 px-4 rounded-lg">
+                    <div class="h-32 w-32 rounded-full border overflow-hidden">
+                        <img src="https://cdn.dribbble.com/users/42048/screenshots/8350927/robotintro_dribble.gif"
+                            alt="Avatar" class="h-full w-full" />
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <div class="text-sm font-semibold" id="UserNameId">KeshavSoft</div>
+                        <button class="ml-2 text-gray-500 hover:text-indigo-600" id="ChangeNameId">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="text-xs text-gray-500">Software Manager</div>
+                    <div class="flex flex-row items-center mt-3">
+                        <div class="flex flex-col justify-center h-4 w-8 bg-indigo-500 rounded-full">
+                            <div class="h-3 w-3 bg-white rounded-full self-end mr-1"></div>
+                        </div>
+                        <div class="leading-none ml-1 text-xs">Active</div>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-8">
+                    <div class="flex flex-row items-center justify-between text-xs">
+                        <span class="font-bold">Active Conversations</span>
+                        <span class="flex items-center justify-center bg-gray-300 h-4 w-4 rounded-full">3</span>
+                    </div>
+                    <div class="flex flex-col space-y-1 mt-4 -mx-2 h-48 overflow-y-auto" id="active-convos-list">
+                        <!-- New conversations will be added here -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex flex-col flex-auto h-full p-6">
+                <div class="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full p-4">
+                    <div class="flex flex-col h-full overflow-x-auto mb-4">
+                        <div class="flex flex-col h-full">
+                            <div class="grid grid-cols-12 gap-y-2">
+                                <!-- Hardcoded messages commented out - will be added dynamically -->
+                                <!--
+                                <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                                    <div class="flex flex-row items-center">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                                            <div>Hey How are you today?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                                    <div class="flex flex-row items-center">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                                            <div>
+                                                Have you completed your lunch?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-6 col-end-13 p-3 rounded-lg">
+                                    <div class="flex items-center justify-start flex-row-reverse">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl">
+                                            <div>I'm ok what about you?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                                    <div class="flex flex-row items-center">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                                            <div>I am Fine</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-6 col-end-13 p-3 rounded-lg">
+                                    <div class="flex items-center justify-start flex-row-reverse">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl">
+                                            <div>
+                                                Have you gone to the holiday trip ?
+                                            </div>
+                                            <div class="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500">
+                                                Seen
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                                    <div class="flex flex-row items-center">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                                            <div>
+                                                No yaar , I have not gone to the holiday trip yet. But I will go next
+                                                week.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                                    <div class="flex flex-row items-center">
+                                        <div
+                                            class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
+                                            A
+                                        </div>
+                                        <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                                            <div class="flex flex-row items-center">
+                                                <button
+                                                    class="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10">
+                                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="1.5"
+                                                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                                        </path>
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <div class="flex flex-row items-center space-x-px ml-4">
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-12 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-6 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-5 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-3 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                                                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
+                        <div>
+                            <button class="flex items-center justify-center text-gray-400 hover:text-gray-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-grow ml-4">
+                            <div class="relative w-full">
+                                <input id="ToSendMessageId" type="text"
+                                    class="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
+                                    placeholder="Add new conversation..." />
+                                <button
+                                    class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-600"
+                                    type="button" id="add-convo-btn">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <button
+                                class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0"
+                                id="SendButtonId" type="button">
+                                <span>Send</span>
+                                <span class="ml-2">
+                                    <svg class="w-4 h-4 transform rotate-45 -mt-px" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <template id="convo-template">
+        <button class="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2" onclick="myFunction()">
+            <div class="flex items-center justify-center h-8 w-8 bg-green-200 rounded-full convo-initial">
+                N</div>
+            <div class="ml-2 text-sm font-semibold convo-name">New Name</div>
+        </button>
+    </template>
+
+    <!-- Message Templates -->
+    <template id="in-message-template">
+        <p hidden>This text should not be visible.</p>
+
+        <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+                <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0 message-avatar">
+                    A
+                </div>
+                <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                    <div class="message-text">Message text will go here</div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="out-message-template">
+        <p hidden>This text should not be visible.</p>
+
+        <div class="col-start-6 col-end-13 p-3 rounded-lg">
+            <div class="flex items-center justify-start flex-row-reverse">
+                <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0 message-avatar">
+                    A
+                </div>
+                <div class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl">
+                    <div class="message-text">Message text will go here</div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="out-message-with-status-template">
+        <p hidden>This text should not be visible.</p>
+
+        <div class="col-start-6 col-end-13 p-3 rounded-lg">
+            <div class="flex items-center justify-start flex-row-reverse">
+                <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0 message-avatar">
+                    A
+                </div>
+                <div class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl">
+                    <div class="message-text">Message text will go here</div>
+                    <div class="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500 message-status">
+                        Seen
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="in-message-with-media-template">
+        <p hidden>This text should not be visible.</p>
+
+        <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+                <div
+                    class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0 message-avatar">
+                    A
+                </div>
+                <div class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl">
+                    <div class="flex flex-row items-center">
+                        <button
+                            class="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10 media-button">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </button>
+                        <div class="flex flex-row items-center space-x-px ml-4 audio-visualizer">
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-12 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-6 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-5 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-3 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                            <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+<script>
+    let webSocket;
+</script>
+
+<script>
+    // Basic function to add incoming messages (left side)
+    function addInMessage(messageText, avatar = 'A') {
+        const chatContainer = document.querySelector('.grid.grid-cols-12');
+
+        // Clone incoming message template
+        const template = document.getElementById('in-message-template');
+        const messageElement = template.content.cloneNode(true);
+
+        // Set message content and avatar
+        messageElement.querySelector('.message-text').textContent = messageText;
+        messageElement.querySelector('.message-avatar').textContent = avatar;
+
+        // Add to chat
+        chatContainer.appendChild(messageElement);
+
+        // Scroll to bottom
+        scrollToBottom();
+    }
+
+    // Basic function to add outgoing messages (right side)
+    function addOutMessage(messageText, avatar = 'A') {
+        const chatContainer = document.querySelector('.grid.grid-cols-12');
+
+        // Clone outgoing message template
+        const template = document.getElementById('out-message-template');
+        const messageElement = template.content.cloneNode(true);
+
+        // Set message content and avatar
+        messageElement.querySelector('.message-text').textContent = messageText;
+        messageElement.querySelector('.message-avatar').textContent = avatar;
+
+        // Add to chat
+        chatContainer.appendChild(messageElement);
+
+        // Scroll to bottom
+        scrollToBottom();
+    }
+
+    // Helper function to scroll to bottom
+    function scrollToBottom() {
+        const chatArea = document.querySelector('.overflow-x-auto');
+        if (chatArea) {
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+    }
+
+    const myFunction = () => {
+        const jVarLocalCurrentTarget = event.currentTarget;
+        const jVarLocalWebSocketId = jVarLocalCurrentTarget.dataset.websocketid;
+
+        console.log("jVarLocalCurrentTarget : ", jVarLocalCurrentTarget);
+
+        let jVarLocalSendButtonId = document.getElementById('SendButtonId');
+
+        jVarLocalSendButtonId.dataset.websocketid = jVarLocalWebSocketId;
+    };
+</script>
+
+<script src="./Js/Index/WebSocket/entryFile.js" type="module"></script>
+<script src="./Js/Index/entryFile.js" type="module"></script>
+
+
+</html>

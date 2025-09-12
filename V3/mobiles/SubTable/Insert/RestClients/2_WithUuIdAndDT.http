@@ -1,0 +1,4 @@
+POST http://localhost:9113/V3/mobiles/SubTable/Insert/WithUuIdAndDT/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{}

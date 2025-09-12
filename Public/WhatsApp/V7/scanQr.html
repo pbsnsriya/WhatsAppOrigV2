@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #ShowQrCodeDivId {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0px;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        #HtmlGifId {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0px;
+            margin: auto;
+            width: 244px;
+            height: 244px;
+        }
+    </style>
+    <script type="module" crossorigin src="./assets/compiled/js/scanQr.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/compiled/js/modulepreload-polyfill.js" />
+</head>
+
+<body>
+    <img src="./assets/compiled/gif/giphy.gif" alt="" id="HtmlGifId" />
+     
+    <div id="ShowQrCodeDivId" style="width: 244px; height: 244px; display: none">
+        <canvas id="CanvasId" width="4" height="4" style="border: 1px solid #fff; visibility: hidden"></canvas>
+        <div style="text-align: center">
+            Scan the above qrcode from your mobile Whatsapp
+            <strong id="ShowDateId">Time</strong>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bwip-js/4.5.2/bwip-js-min.js"
+    integrity="sha512-tvt84W3CUH1Xrl/ulywMyYEebSvxk+HShlHLn89zXns916bIM2zZPqCfVDb/l8thxYHs68+wu99qLCt0LBlQQQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    let webSocket;
+    let KSQrRec;
+    let KSWAProfile;
+    let KSIntervalId;
+
+    let jFStartWA = async () => {
+        let resource = "/StartWA";
+        await fetch(resource);
+    };
+
+    jFStartWA().then(() => {
+        console.log("sssssssssssss");
+    });
+</script>
+
+<!-- <script type="module" src="./Js/ScanQr/WebSocket/entryFile.js"></script>
+<script type="module" src="./Js/ScanQr/entryFile.js"></script> -->
+
+</html>

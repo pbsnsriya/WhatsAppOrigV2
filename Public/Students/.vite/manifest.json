@@ -1,0 +1,102 @@
+{
+  "HtmlFiles/checkMail.html": {
+    "file": "assets/checkMail-BuCIJb2f.js",
+    "name": "checkMail",
+    "src": "HtmlFiles/checkMail.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ],
+    "assets": [
+      "assets/Animation-IZ8_7UOj.gif"
+    ]
+  },
+  "HtmlFiles/registerForInterns.html": {
+    "file": "assets/registerForInterns-BV9lOwkQ.js",
+    "name": "registerForInterns",
+    "src": "HtmlFiles/registerForInterns.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ],
+    "css": [
+      "assets/style-CkM8oOZw.css"
+    ],
+    "assets": [
+      "assets/favicon-DcIgDO7J.png",
+      "assets/apple-touch-icon-Ou6JeAuw.png"
+    ]
+  },
+  "HtmlFiles/registerV2.html": {
+    "file": "assets/registerV2-DflEkg0r.js",
+    "name": "registerV2",
+    "src": "HtmlFiles/registerV2.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ],
+    "css": [
+      "assets/style-CkM8oOZw.css"
+    ],
+    "assets": [
+      "assets/favicon-DcIgDO7J.png",
+      "assets/apple-touch-icon-Ou6JeAuw.png"
+    ]
+  },
+  "HtmlFiles/registerV3.html": {
+    "file": "assets/registerV3-gZtFljwO.js",
+    "name": "registerV3",
+    "src": "HtmlFiles/registerV3.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ],
+    "css": [
+      "assets/style-CkM8oOZw.css"
+    ],
+    "assets": [
+      "assets/favicon-DcIgDO7J.png",
+      "assets/apple-touch-icon-Ou6JeAuw.png"
+    ]
+  },
+  "HtmlFiles/registerV4.html": {
+    "file": "assets/registerV4-BmtLS1VW.js",
+    "name": "registerV4",
+    "src": "HtmlFiles/registerV4.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ],
+    "css": [
+      "assets/style-CkM8oOZw.css"
+    ],
+    "assets": [
+      "assets/favicon-DcIgDO7J.png",
+      "assets/apple-touch-icon-Ou6JeAuw.png"
+    ]
+  },
+  "Js/pages/checkMail/Animation.gif": {
+    "file": "assets/Animation-IZ8_7UOj.gif",
+    "src": "Js/pages/checkMail/Animation.gif"
+  },
+  "_StartFunc-CDzZ4CCX.js": {
+    "file": "assets/StartFunc-CDzZ4CCX.js",
+    "name": "StartFunc"
+  },
+  "_modulepreload-polyfill-B5Qt9EMX.js": {
+    "file": "assets/modulepreload-polyfill-B5Qt9EMX.js",
+    "name": "modulepreload-polyfill"
+  },
+  "_style-!~{00b}~.js": {
+    "file": "assets/style-CkM8oOZw.css",
+    "src": "_style-!~{00b}~.js"
+  },
+  "assets/static/NiceAdmin/img/apple-touch-icon.png": {
+    "file": "assets/apple-touch-icon-Ou6JeAuw.png",
+    "src": "assets/static/NiceAdmin/img/apple-touch-icon.png"
+  },
+  "assets/static/NiceAdmin/img/favicon.png": {
+    "file": "assets/favicon-DcIgDO7J.png",
+    "src": "assets/static/NiceAdmin/img/favicon.png"
+  }
+}

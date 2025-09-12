@@ -1,0 +1,4 @@
+POST http://localhost:9113/SV3/messages/Alter/WithPk/{pk}
+Content-Type: application/json
+
+{}

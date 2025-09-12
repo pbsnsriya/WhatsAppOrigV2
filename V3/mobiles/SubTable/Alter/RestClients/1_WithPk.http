@@ -1,0 +1,4 @@
+POST http://localhost:9113/V3/mobiles/SubTable/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{}

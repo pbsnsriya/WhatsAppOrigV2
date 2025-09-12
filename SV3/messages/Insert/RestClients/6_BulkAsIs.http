@@ -1,0 +1,6 @@
+POST http://localhost:9113/SV3/messages/Insert/BulkAsIs
+Content-Type: application/json
+
+[
+  {}
+]

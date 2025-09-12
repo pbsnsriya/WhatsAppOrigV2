@@ -1,0 +1,47 @@
+{
+    "TableName": "/$ApiVersion/$TableName",
+    "showFooter": true,
+    "toolbar": "#toolbar",
+    "searchable": true,
+    "search": true,
+    "columns": [
+        {
+            "field": "title",
+            "title": "Title",
+            "unique": true,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "start",
+            "title": "Start Date",
+            "unique": false,
+            "type": "date",
+            "isInput": true
+        },
+        {
+            "field": "className",
+            "title": "Class Name",
+            "unique": false,
+            "type": "text",
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "bg-primary",
+                    "text": "bg-primary"
+                },
+                {
+                    "value": "bg-success",
+                    "text": "bg-success"
+                }
+            ]
+        }
+    ],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "Credit"
+        }
+    }
+}
