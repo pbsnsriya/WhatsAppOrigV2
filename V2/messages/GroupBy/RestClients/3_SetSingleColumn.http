@@ -1,0 +1,6 @@
+POST http://localhost:9113/V2/messages/GroupBy/SetSingleColumn
+Content-Type: application/json
+
+[
+	{ColumnsName}
+]

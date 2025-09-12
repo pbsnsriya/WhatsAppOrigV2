@@ -1,0 +1,4 @@
+POST http://localhost:9113/V2/messages/SubTableOnArray/Insert/AsIs/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{}

@@ -1,0 +1,4 @@
+POST http://localhost:9113/SV2/messages/SubTableOnObj/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{}

@@ -1,22 +1,22 @@
 {
-  "name": "WhatsAppOrigV2",
-  "version": "1.1.5",
-  "description": "",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "cookie-parser": "^1.4.7",
-    "dotenv": "17.2.0",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "multer": "^2.0.2",
-    "nodemailer": "^7.0.6"
-  }
+    "name": "WhatsAppOrigV2",
+    "version": "1.1.6",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "17.2.0",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^2.0.2",
+        "nodemailer": "^7.0.6"
+    }
 }

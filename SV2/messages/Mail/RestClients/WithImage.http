@@ -1,0 +1,4 @@
+POST http://localhost:9113/SV2/messages/Mail/WithImage
+Content-Type: application/json
+
+{}

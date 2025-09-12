@@ -1,0 +1,16 @@
+POST http://localhost:9113/SV2/StudentNames/Mail/Image
+Content-Type: application/json
+
+{
+  "StudentName": "",
+  "Mobile": "",
+  "email": "",
+  "CollegeName": "",
+  "Country": "",
+  "EntranceRank": "",
+  "YearPassOut": "",
+  "Back_logs": "",
+  "RollNumber": "",
+  "file": "",
+  "GitLink": ""
+}

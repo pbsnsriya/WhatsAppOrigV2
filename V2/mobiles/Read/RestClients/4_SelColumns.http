@@ -1,0 +1,4 @@
+POST http://localhost:9113/V2/mobiles/Read/SelColumns
+Content-Type: application/json
+
+[ "exampleKey"]

@@ -1,0 +1,4 @@
+POST http://localhost:9113/SV2/mobiles/Mail/Image
+Content-Type: application/json
+
+{}

@@ -1,0 +1,17 @@
+complete task1 
+
+https://keshavsoft.com/Interns/task1.pdf
+
+on
+
+https://jamstack.org/
+
+https://mozilla.github.io/nunjucks/
+
+https://handlebarsjs.com/
+
+https://vite.dev/
+
+https://gulpjs.com/
+
+should use any of the above only

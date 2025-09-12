@@ -20,3 +20,7 @@ for whatsapp, websocket and student management
 ### 1.1.5
 
 - register student perfect with mail sent
+
+### 1.1.6
+
+- public folders added, new ui for wa send

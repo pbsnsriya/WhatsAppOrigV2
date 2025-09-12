@@ -1,0 +1,6 @@
+POST http://localhost:9113/SV2/StudentNames/GroupBy/SingleColLength
+Content-Type: application/json
+
+[
+	{ColumnsName}
+]

@@ -1,0 +1,4 @@
+POST http://localhost:9113/SV2/mobiles/AddWithDefault/InitRow/{Key}
+Content-Type: application/json
+
+{ "ColumnName": "Value" }
