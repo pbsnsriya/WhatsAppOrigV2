@@ -1,5 +1,5 @@
 {
-    "tableName": "StudentNames",
+    "tableName": "connectedClients",
     "columns": [
         {
             "field": "id",
@@ -16,6 +16,6 @@
             "isInput": true
         }
     ],
-    "data": {},
+    "data": [],
     "Vertical": []
 }

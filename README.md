@@ -40,3 +40,7 @@ for whatsapp, websocket and student management
 ### 1.1.10
 
 - register version started
+
+### 1.1.11
+
+- schema changed
