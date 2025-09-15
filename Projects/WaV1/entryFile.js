@@ -1,8 +1,6 @@
 import Whatsapp from 'whatsapp-web.js';
 const { Client, LocalAuth } = Whatsapp;
 
-import qrcode from 'qrcode-terminal';
-
 import { StartFunc as StartFuncFromAuthenticated } from "./authenticated.js";
 import { StartFunc as StartFuncFromInwardMessage } from "./InwardMessage/entryFile.js";
 
@@ -23,7 +21,6 @@ const StartFunc = async () => {
 
     client.on('qr', qr => {
         console.log("qr is generated : ", qr);
-        qrcode.generate(qr, { small: true });
 
         StartFuncFromQrCodeGenerated({ inQrCodeGenerated: qr })
         // res.end(qr);

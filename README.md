@@ -28,3 +28,7 @@ for whatsapp, websocket and student management
 ### 1.1.7
 
 - task2 added
+
+### 1.1.8
+
+- wa working good

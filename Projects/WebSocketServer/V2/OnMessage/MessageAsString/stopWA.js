@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFromWA } from "../../../../WA/signOut.js";
+import { StartFunc as StartFuncFromWA } from "../../../../WaV1/signOut.js";
 
 let StartFunc = ({ inws }) => {
     StartFuncFromWA();

@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFromWA } from "../../../../../WA/readChatsFromNumber.js";
+import { StartFunc as StartFuncFromWA } from "../../../../../WaV1/readChatsFromNumber.js";
 
 let StartFunc = ({ inws, inFromNumber }) => {
     StartFuncFromWA({ inFromNumber }).then();
