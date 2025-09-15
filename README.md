@@ -32,3 +32,7 @@ for whatsapp, websocket and student management
 ### 1.1.8
 
 - wa working good
+
+### 1.1.9
+
+- wa send message working good

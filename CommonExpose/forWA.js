@@ -2,7 +2,7 @@ const clients = new Map();
 const CommonTimeSpan = process.env.TimeSpan;
 
 const ReadFunc = () => {
-    console.log("sent messages : ", clients.size);
+    // console.log("sent messages : ", clients.size);
 
     return clients;
 };
@@ -13,6 +13,7 @@ const InsertFunc = ({ inValueToInsert }) => {
 
 const CheckLastEntry = () => {
     const LocalDateDifference = DateDifference();
+    // console.log("aaaaaaaaaaa : ",CommonTimeSpan, LocalDateDifference);
 
     if (LocalDateDifference > CommonTimeSpan) {
         return true;
