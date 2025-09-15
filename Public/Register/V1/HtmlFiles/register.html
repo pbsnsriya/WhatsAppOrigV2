@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/favicon-DcIgDO7J.png" rel="icon">
+    <link href="../assets/apple-touch-icon-Ou6JeAuw.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Template Main CSS File -->
+
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script type="module" crossorigin src="../assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="../assets/StartFunc-CDzZ4CCX.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/style-CkM8oOZw.css">
+</head>
+
+<body>
+    <main>
+        
+<div class="container">
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                    <div class="d-flex justify-content-center py-4">
+                        <a href="index.html" class="logo d-flex align-items-center w-auto">
+                            <img src="assets/img/logo.png" alt="">
+                            <span class="d-none d-lg-block">KeshavSoft</span>
+                        </a>
+                    </div><!-- End Logo -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <h5 class="card-title text-center pb-0 fs-4">Register now</h5>
+                                <p class="text-center small">Enter the below details to show your interest</p>
+                            </div>
+
+                            <form id="FormId" class="row g-3 needs-validation" onsubmit="return false" novalidate>
+
+                                <div class="col-12">
+                                    <label for="StudentNameId" class="form-label">Name</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" name="StudentName" class="form-control" id="StudentNameId"
+                                            required autofocus>
+                                        <div class="invalid-feedback">Please choose a username.</div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-12">
+                                    <label for="MobileId" class="form-label">Mobile</label>
+                                    <input type="number" name="Mobile" class="form-control" id="MobileId" required>
+                                    <div class="invalid-feedback">Please enter your password!</div>
+                                </div>
+                                 -->
+                                <div class="col-12">
+                                    <label for="MobileId" class="form-label">Mobile</label>
+                                    <input name="Mobile" type="tel" class="form-control" autocomplete="off"
+                                        id="MobileId">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="EmailId" class="form-label">User Email</label>
+                                    <input type="email" name="Email" class="form-control" id="EmailId" required>
+                                    <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="CollegeSelectId" class="form-label">Select College</label>
+                                    <select class="form-select" aria-label="Default select example" id="CollegeSelectId"
+                                        name="CollegeName" required>
+                                        <option selected>Open this select menu</option>
+                                        <option value="ACE">ACE</option>
+                                        <option value="CMR">CMR</option>
+                                        <option value="Geethanjali">Geethanjali</option>
+                                        <option value="KSRM">KSRM</option>
+                                        <option value="LBCE">LBCE</option>
+                                        <option value="VMEG">VMEG</option>
+                                        <option value="JNTUV">JNTUV</option>
+                                        <option value="RGM">RGM</option>
+                                        <option value="VMTW">VMTW</option>
+                                        <option value="VITB">VITB</option>
+                                        <option value="VJEC">VJEC</option>
+                                        <option value="SVEC-MBU">SVEC-MBU</option>
+                                        <option value="VNRVJIET">VNRVJIET</option>
+                                        <option value="Anurag">Anurag</option>
+                                        <option value="VFSTR">VFSTR</option>
+                                        <option value="AUW">AUW</option>
+                                        <option value="GIET University">GIET University</option>
+                                        <option value="LPU">LPU</option>
+                                        <option value="CET TRIVANDRUM">CET TRIVANDRUM</option>
+                                        <option value="MarwadiUniversity">MarwadiUniversity</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="CountrySelectId" class="form-label">Select Country</label>
+                                    <select class="form-select" aria-label="Default select example" id="CountrySelectId"
+                                        name="Country" required>
+                                        <option value="India" selected>India</option>
+                                        <option value="Nepal">Nepal</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="EntranceRankId" class="form-label">Entrance Rank</label>
+                                    <input name="EntranceRank" type="number" class="form-control" autocomplete="off"
+                                        id="EntranceRankId" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="YearPassOutId" class="form-label">Year PassOut</label>
+                                    <select class="form-select" aria-label="Default select example" id="YearPassOutId"
+                                        name="YearPassOut" required>
+                                        <option selected>Open this select menu</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="BackLogsId" class="form-label">Back-logs if any...</label>
+                                    <input name="Back-logs" type="number" class="form-control" autocomplete="off"
+                                        id="BackLogsId" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="RollNumberId" class="form-label">Roll Number</label>
+                                    <input name="Roll Number" type="text" class="form-control" autocomplete="off"
+                                        id="RollNumberId" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="formFile" class="form-label">Select resume file</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="GitLinkId" class="form-label">Your Github Link</label>
+                                    <input name="GitLink" type="text" class="form-control" autocomplete="off"
+                                        id="GitLinkId">
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="terms" type="checkbox" value=""
+                                            id="acceptTerms">
+                                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a
+                                                href="#">terms and
+                                                conditions</a></label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="btn btn-primary"
+                                        id="CreateButtonId">Create
+                                        Account</button>
+                                </div>
+                                <div class="col-12">
+                                    <p class="small mb-0">Know more... <a href="../../chat/chat.html">start chat</a>
+                                    </p>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="credits">
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you purchased the pro version. -->
+                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    </main><!-- End #main -->
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+<!-- <script type="module" src="../Js/pages/register/StartFunc.js"></script> -->
+
+</body>
+
+</html>

@@ -36,3 +36,7 @@ for whatsapp, websocket and student management
 ### 1.1.9
 
 - wa send message working good
+
+### 1.1.10
+
+- register version started

@@ -1,0 +1,5 @@
+{
+    "routePath": "binV3",
+    "tableName": "Openings",
+    "PostUrl": "/binV3/StudentNames/Create/SendMail"
+}

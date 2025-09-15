@@ -1,0 +1,7 @@
+{
+    "routePath": "binV3",
+    "tableName": "Openings",
+    "PostUrl": "/V4/StudentNames/Mail/WithImageAndUniqueCheck",
+    "PostUrl1": "/binV3/StudentNames/Create/SendMail",
+    "PhoneUrl": "tel:+91-984-816-3021"
+}
