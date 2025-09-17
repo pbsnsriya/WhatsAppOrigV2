@@ -1,0 +1,7 @@
+POST http://localhost:9113/V4/StudentNames/Insert/AsIs
+Content-Type: application/json
+
+{
+  "Key": "",
+  "Value": ""
+}

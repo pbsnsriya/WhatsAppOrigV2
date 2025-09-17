@@ -1,0 +1,1 @@
+{"TableName":"/V4/connectedClients","showFooter":true,"toolbar":"#toolbar","searchable":true,"search":true,"columns":[{"field":"id","title":"id","unique":false,"type":"text","isInput":true},{"field":"Name","title":"Name","unique":true,"type":"number","isInput":true}]}

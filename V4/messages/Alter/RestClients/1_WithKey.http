@@ -1,0 +1,6 @@
+POST http://localhost:9113/V4/messages/Alter/WithKey/{Key}
+Content-Type: application/json
+
+{
+  "Value": ""
+}

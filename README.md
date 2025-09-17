@@ -48,3 +48,7 @@ for whatsapp, websocket and student management
 ### 1.1.12
 
 - data folder added and chat return working good
+
+### 1.1.13
+
+- UI also perfect
