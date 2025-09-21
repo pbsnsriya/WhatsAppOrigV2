@@ -52,3 +52,7 @@ for whatsapp, websocket and student management
 ### 1.1.13
 
 - UI also perfect
+
+### 1.1.14
+
+- tables added
