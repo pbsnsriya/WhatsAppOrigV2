@@ -31,7 +31,7 @@ Run the server with:
 bash
 npm run start
 
-The server will start on *http://localhost:3000*.
+The server will start on *http://localhost:9113*.
 
 ### 5. (Optional) Using Environment File
 If you want to run the server with environment variables:
@@ -48,7 +48,7 @@ If you want to run the server with environment variables:
 1. Clone repo  
 2. Install packages  
 3. Remove -env-file=.env in package.json  
-4. Run npm run start (server runs at port 3000)  
+4. Run npm run start (server runs at port 9113)  
 5. (Optional) Use .env.local → .env for environment setup
 
 6. 
