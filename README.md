@@ -56,3 +56,7 @@ for whatsapp, websocket and student management
 ### 1.1.14
 
 - tables added
+
+### 1.1.15
+
+- batch file fixed

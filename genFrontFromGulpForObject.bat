@@ -23,7 +23,11 @@ for %%f in (Schemas\*.json) do (
 
     REM Create target folder and copy built files
     mkdir "Public\%NEXT_VERSION%\%%~nf"
-    xcopy "..\%CommonRepoName%\dist" "Public\%NEXT_VERSION%\%%~nf" /h /i /c /k /e /r /y >nul
+    @REM xcopy "..\%CommonRepoName%\dist" "Public\%NEXT_VERSION%\%%~nf" /h /i /c /k /e /r /y >nul
+
+    xcopy "..\%CommonRepoName%\dist" "Public\%NEXT_VERSION%\%%~nf\UnProtected" /h /i /c /k /e /r /y >nul
+    xcopy "..\%CommonRepoName%\distForProtected" "Public\%NEXT_VERSION%\%%~nf\Protected" /h /i /c /k /e /r /y >nul
+    copy "..\%CommonRepoName%\Menu\index.html" "Public\%NEXT_VERSION%\%%~nf"
 
     echo Done with %%~nxf
 )
